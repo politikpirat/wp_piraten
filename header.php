@@ -33,7 +33,7 @@ print('<?xml version="1.0" encoding="UTF-8"?>');
 </head>
 <body class="home">
 	<div id="body">
-		<h1><div id="logoCrop"><a href="http://berlin.piratenpartei.de"><img src="<?= piratenImageUri() ?>/piratenturm.png" alt="Piratenpartei Berlin" height="460" width="144" id="logo" /></a></div></h1>
+		<h1><div id="logoCrop"><a href="<?php echo get_option('home'); ?>/"><img src="<?= piratenImageUri() ?>/piratenturm.png" alt="Piratenpartei Berlin" height="360" width="124" id="logo" /></a></div></h1>
 		
 			<div id="headerBox">
 			<!--div id="headerSideBox"></div><div id="headerMainBox">--><a href="http://berlin.piratenpartei.de/join/mitglied-werden"><span id="werdePirat">&nbsp;</span></a><!--</div-->

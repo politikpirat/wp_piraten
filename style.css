@@ -100,10 +100,10 @@ h1 {
 	margin:0;
 }
 #logoCrop {
-	height:410px;
+	height:360px;
 	overflow:hidden;
 	position:absolute;
-	top:0px;
+	top:50px;
 	left:60px;
 	z-index:100;
 	border: none;
@@ -112,11 +112,6 @@ h1 {
 #logoCrop img {
 	border: 0px none;
 }
-#logo {
-/*	float:left;*/
-}
-
-
 
 #header, #content, #bottom {
 }
