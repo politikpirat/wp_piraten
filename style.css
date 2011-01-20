@@ -1,16 +1,17 @@
 /*
 Theme Name: PIRATEN
 Theme URI: http://berlin.piratenpartei.de/
-Description: Das PIRATEN BERLIN Theme
-Version: 0.1
-Author: Florian Bischof
-Author URI: http://twitter.com/bischof
+Description: Wordpress Pirate-Theme
+Version: 0.2
+Author: Martin Delius
+Author URI: http://twitter.com/beapirate
 Tags: orange, piraten, fixed width, two columns, widgets
 
-	PIRATEN v0.1
+	PIRATEN v0.2
 	 http://berlin.piratenpartei.de/
 
-	This theme was designed and built by Florian Bischof
+	This theme was redesigned and built by Martin Delius
+	originally made by Florian Bischof
 	
 	The CSS, XHTML and design is released under GPL:
 	http://www.opensource.org/licenses/gpl-license.php
@@ -18,18 +19,10 @@ Tags: orange, piraten, fixed width, two columns, widgets
 */
 
 
-/* WP Zeugs */
+/* WP stuff */
 #comment {
 	width:100%;
 }
-
-#disclaimer {
-	font-size:small;
-	color:#ffd6ad;
-	width:220px;
-	margin:36px 0 0 50px;
-}
-
 
 #werdePirat {
 	display:block;
@@ -43,24 +36,13 @@ a:hover #werdePirat {
 }
 
 /**
- * Globales
+ * global
  */
 body {
 	border:0px inset #000;
-	font-family: Corbel,
-             "Lucida Grande",
-             "Lucida Sans Unicode",
-             "Lucida Sans",
-             "DejaVu Sans",
-             "Bitstream Vera Sans",
-             "Liberation Sans",
-             Verdana,
-             sans-serif;
 	margin:0;
 	padding:0;
 	background-color:#333;
-	// background:url(images/bgOrange.jpg) #fff top center no-repeat;
-	//line-height: 1em;
 	color:#333;
 	font-size:11pt;
 }
@@ -84,16 +66,20 @@ a:active, a.active {
 }
 
 /**
- * Schriften
+ * fonts
  */
-h2, h4, h6, body {
-	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+h2, h4, h6, body, blockquote, em, h1, h2, h3, h5, i, .feedBy {
+        font-family: Corbel,
+             "Lucida Grande",
+             "Lucida Sans Unicode",
+             "Lucida Sans",
+             "DejaVu Sans",
+             "Bitstream Vera Sans",
+             "Liberation Sans",
+             Verdana,
+             sans-serif;
 }
  
-blockquote, em, h1, h2, h3, h5, i, .feedBy  {
-	font-family:Arial;
-	/*font-family:"Linux Libertine", Georgia, "Times New Roman", Times, serif;*/
-}
 
 h4 {
 	font-size: .9em;
@@ -260,7 +246,6 @@ h1 {
 #pageHeader h2 {
 	margin:0;
 	font-size:20px;
-	font-family:'Impact';
 	font-weight:normal;
 	padding:15px 0 0 68px;
 }
@@ -289,10 +274,7 @@ h2 a:active, h2 a:link {
 	font-size:110%;
 	line-height: 14px;
 	color: #000;
-/*	font-family: Georgia, Times, serif;*/
-	font-family:"Linux Libertine", Georgia, "Times New Roman", Times, serif;
 	font-weight: normal;
-	//font-style: italic;
 }
 .blog.module .entry {
 	margin-top:6px;
@@ -359,7 +341,6 @@ h2 a:active, h2 a:link {
 	margin:0;
 	height:32px;
 	font-size:20px;
-	font-family:'Arial';
 	font-weight:bold;
 	/*background:url(images/bgBoxHeader.jpg) center top repeat-x;
 	border: 1px solid #F90;	
