@@ -35,6 +35,21 @@ a:hover #werdePirat {
 	background:url(images/werdePirat.png) no-repeat !important;
 }
 
+.navigation {
+	margin-bottom:0.5em;
+	background-color: #333;
+	color: #f90;
+	padding:0.5em;
+}
+
+.navigation a {
+	color: #fff;
+}
+
+.navigation a:visited {
+	color: #f90;
+}
+
 /**
  * global
  */

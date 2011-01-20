@@ -14,7 +14,7 @@
 					<div class="alignright"><?php next_post_link('%link &raquo;') ?></div>
 				</div>
 				
-				<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h3>
+				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h1>
 				<strong>von <?php the_author() ?> um <?php the_time(__('H\hh', 'kubrick')) ?> am <?php the_time(__('F jS, Y', 'kubrick')) ?></strong>
 				<!--von Svn um 23h42 am Donnerstag, 5. März 2009-->
 				<div class="entry">
