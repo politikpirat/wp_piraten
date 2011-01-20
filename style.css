@@ -285,7 +285,13 @@ h2 a:active, h2 a:link {
 }
 .blog.module .entryFooter {
 	padding:10px;
-	background:url(images/bgBlogFooter.jpg) repeat-x;
+	background-color: #333;
+	color: #f90;
+}
+
+.blog.module .entryFooter a {
+	text-decoration: none;
+	color: #fff;
 }
 
 .sidebar {

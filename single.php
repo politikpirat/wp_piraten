@@ -29,23 +29,23 @@
 				<div class="entryFooter">
 					<div><?php wp_link_pages(array('before' => '<p><strong>' . __('Pages:', 'kubrick') . '</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?></div>
 					<div class="postmetadata tags">
-						getaggt mit: <?php the_tags(__('Tags:', 'kubrick') . ' ', ', ', '<br />'); ?>
+						getaggt mit: <?php the_tags(__('', 'kubrick') . ' ', ', ', '<br />'); ?>
 					</div>
 					<div class="postmetadata">
-						abgelegt in: <?php printf(__('Posted in %s', 'kubrick'), get_the_category_list(', ')); ?>
+						abgelegt in: <?php printf(__('%s', 'kubrick'), get_the_category_list(', ')); ?>
 					</div>
 					<div class="blogArticleLinks">
-						<?php comments_popup_link(__('No Comments &#187;', 'kubrick'), __('1 Comment &#187;', 'kubrick'), __('% Comments &#187;', 'kubrick'), '', __('Comments Closed', 'kubrick') ); ?>
+						<?php comments_popup_link(__('Keine Kommentare &#187;', 'kubrick'), __('Ein Kommentar &#187;', 'kubrick'), __('% Kommentare &#187;', 'kubrick'), '', __('Kommentare nicht zugelassen', 'kubrick') ); ?>
 					</div>
-					<div><?php printf(__("You can follow any responses to this entry through the <a href='%s'>RSS 2.0</a> feed.", "kubrick"), get_post_comments_feed_link()); ?></div>
+					<div><?php printf(__("Kommentare als <a href='%s'>RSS 2.0</a> feed.", "kubrick"), get_post_comments_feed_link()); ?></div>
 					<div>
 						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 							// Both Comments and Pings are open ?>
-							<?php printf(__('You can <a href="#respond">leave a response</a>, or <a href="%s" rel="trackback">trackback</a> from your own site.', 'kubrick'), trackback_url(false)); ?>
+							<?php printf(__('Du kannst einen <a href="#respond">Kommentar hinterlassen</a> oder <a href="%s" rel="trackback">einen Trackback</a> von der eigenen Seite.', 'kubrick'), trackback_url(false)); ?>
 
 						<?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 							// Only Pings are Open ?>
-							<?php printf(__('Responses are currently closed, but you can <a href="%s" rel="trackback">trackback</a> from your own site.', 'kubrick'), trackback_url(false)); ?>
+							<?php printf(__('Kommentare sind hier nicht gestattet aber du kannst einen <a href="%s" rel="trackback">Trackback</a> von der eigenen Seite aus hinterlassen.', 'kubrick'), trackback_url(false)); ?>
 
 						<?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
 							// Comments are open, Pings are not ?>
