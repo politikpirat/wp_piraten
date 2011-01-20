@@ -1,0 +1,116 @@
+#ZENSURSULA div, #ZENSURSULA img {
+    margin: 0;
+    padding: 0;
+}
+#ZENSURSULA img {
+   border: none !important;
+   max-width: 100% !important;
+}
+
+#ZENSURSULA {
+    left: 0px !important;
+    top: 0px !important;
+    display: block;
+    z-index: 9999 !important;
+    text-align: left!important;
+}
+
+#Z_CHARACTER {
+    position: absolute !important;
+    display: block !important;
+    z-index: 9999 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    width: 140px !important;
+    height: 144px !important;
+    cursor: move  !important;
+}
+
+#Z_CHARACTER img {
+    position: absolute !important;
+    display: block !important;
+    z-index: 9999 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#Z_STOPSIGN {
+    display: none;
+}
+
+#Z_BUBBLE {
+    position: absolute !important;
+    margin: 0 !important;
+    font-size: 0px !important;
+    padding: 14px 0 0 0 !important;
+    z-index: 9999 !important;
+    background: url(/vdl/bubl-top.gif) no-repeat !important;
+}
+
+#Z_BUBBLEHOOK {
+    position: absolute !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    left:-36px !important;
+    top: 14px !important;
+    width: 38px;
+    height: 15px;
+}
+
+#Z_BUBBLEHOOK_R {
+    position: absolute !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    left:298px !important;
+    top: 14px !important;
+    width: 38px;
+    height: 15px;
+}
+
+#Z_INNERBUBBLE {
+    width: 280px !important;
+    padding: 0 10px 14px 10px !important;
+    z-index: 9999 !important;
+    font: 13px/15px "Comic Sans MS", "Arial", sans-serif !important;
+    letter-spacing: 0 !important;
+    background: url(/vdl/bubl.gif) bottom left !important;
+    color: black !important;
+    text-align: center !important;
+}
+
+    #Z_INNERBUBBLE b {
+        font-weight: bold !important;
+        color: black  !important;
+    }
+
+    #Z_INNERBUBBLE strike {
+        text-decoration: line-through;
+    }
+
+    #Z_INNERBUBBLE a {
+        text-decoration: underline !important;
+        font-weight: normal !important;
+    }
+
+        #Z_INNERBUBBLE a:link {
+            color: blue  !important;
+        }
+        #Z_INNERBUBBLE a:visited {
+            color: purple !important;
+        }
+
+
+
+#Z_ACTUALSTOPSIGN {
+    position:absolute !important;
+    left:-331px;
+    top:-332px;
+    width:662px !important;
+    height:664px !important;
+    color:white !important;
+    text-align:center !important;
+    padding:0 !important;
+    margin:0 !important;
+    background:url(/vdl/stopp.gif) !important;
+}
