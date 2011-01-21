@@ -27,37 +27,30 @@ Tags: orange, piraten, fixed width, two columns, widgets
 #werdePirat {
 	display:block;
 	background:url(images/werdePirat0.png) no-repeat;
-	width:960px;
-	height:360px;
+	width:900px;
+	height:338px;
+	margin: 30px;
+	-moz-box-shadow: 0px 5px 9px #333;
+        -webkit-box-shadow: 0px 5px 9px #333;
+        box-shadow: 0px 5px 9px #333;
+
 }
 
 a:hover #werdePirat {
 	background:url(images/werdePirat.png) no-repeat !important;
+        -moz-box-shadow: 0px 5px 9px #f90;
+        -webkit-box-shadow: 0px 5px 9px #f90;
+        box-shadow: 0px 5px 9px #f90;
 }
 
-.navigation {
-	margin-bottom:0.5em;
-	background-color: #333;
-	color: #f90;
-	padding:0.5em;
-}
-
-.navigation a {
-	color: #fff;
-}
-
-.navigation a:visited {
-	color: #f90;
-}
 
 /**
  * global
  */
 body {
-	border:0px inset #000;
 	margin:0;
 	padding:0;
-	background-color:#333;
+	background-color:#888;
 	color:#333;
 	font-size:11pt;
 }
@@ -68,16 +61,15 @@ video {
 
 a:link, a:visited {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
 }
  
 a:hover {
-  color: #0061a0;
-  text-decoration: underline;
+  color: #f90;
 }
  
 a:active, a.active {
-  color: #5894be;
+  color: #333;
 }
 
 /**
@@ -106,8 +98,11 @@ h4 {
 
 #body {
 	margin:0 auto;
-        background-color:#333;
+        background-color:#f90;
 	width:960px;
+        -moz-box-shadow: 0px 5px 9px #333;
+        -webkit-box-shadow: 0px 5px 9px #333;
+        box-shadow: 0px 5px 9px #333;
 }
 
 h1 {
@@ -115,11 +110,11 @@ h1 {
 	margin:0;
 }
 #logoCrop {
-	height:360px;
+	height:338px;
 	overflow:hidden;
 	position:absolute;
-	top:50px;
-	left:60px;
+	top:30px;
+	left:80px;
 	z-index:100;
 	border: none;
 }
@@ -132,7 +127,7 @@ h1 {
 }
 
 #menu-main {
-	top:5px;
+	top:0px;
 }
 
 #headerBox {
@@ -140,9 +135,10 @@ h1 {
 	height:410px;
 	border:0;
 	margin:0;
-	top:50px;
+	top:30px;
 	width:960px;
 	white-space:nowrap;
+	background-color: #f90;
 }
 #headerMainBox {
 	position:relative;
@@ -163,12 +159,13 @@ h1 {
 
 .menu {
 	position:absolute;
-	width:953px;
-	height:50px;
-	top:360px;
+	width:910px;
+	height:40px;
+	top:350px;
 	z-index:23;
 	background:#f90;
-	padding-left:0.5em
+	padding-left:25px;
+	padding-right:25px;
 }
 
 .menu li {
@@ -179,15 +176,16 @@ h1 {
 .menu ul {
 	margin:0;
 	padding:0 0 0 0px;
+	width: 910px;
 }
 
 .menu > ul > li {
 	float:left;
 	position:static;
 	text-align:center;
-	width:19%;
+	width:168px;
 	padding:10px 2px;
-	margin:2px;
+	margin:5px;
 	/*border-right:1px solid #f90;*/
         -moz-box-shadow: 0px 5px 9px #333;
         -webkit-box-shadow: 0px 5px 9px #333;
@@ -202,7 +200,7 @@ h1 {
 	position:static;
         float:right;
 	background-color:#fff;
-	padding:0 0 4px 0;
+	padding: 0px;
 	z-index:23;
 }
 .menu > ul > li:hover > ul {
@@ -210,13 +208,18 @@ h1 {
         margin-bottom:0px;
 }
 
+.menu ul > li a {
+	font-weight: bold;
+	font-size: 18px;
+}
 .menu li li a {
-	padding:0 12px;
+	padding:3px;
 	display:block;
+	font-size: 14px;
 }
 
 .menu li li a:hover {
-	background-color:#eee;
+	background-color:#333;
 }
 
 .menu > ul > li > ul > li {
@@ -230,18 +233,17 @@ h1 {
 #content {
 	position:relative;
 	background-color:#f90;
-        /*border:1px solid #fff;*/
 	opacity:1;
 	border:0;
-	margin:50px 0px 0px 0px;
+	margin:30px 0px 0px 0px;
 	padding:0;
 }
 
 #col1 {
 	float:left;
-	width:635px;
+	width:600px;
 	background-color:#fff;
-	margin: 0.5em;
+	margin: 0.5em 0.5em 0.5em 30px;
         -moz-box-shadow: 0px 5px 9px #333;
         -webkit-box-shadow: 0px 5px 9px #333;
         box-shadow: 0px 5px 9px #333;
@@ -309,9 +311,14 @@ h2 a:active, h2 a:link {
 	color: #fff;
 }
 
+.blog.module .entryFooter a:hover {
+        text-decoration: none;
+        color: #f90;
+}
+
 .sidebar {
 	margin:0 0 0 640px;
-	padding: 0.5em 20px;
+	padding: 0.5em 10px;
 	width:280px;
 	background-color:#f90;
 	//background:url(images/bgBlogfooter.gif) #f90 repeat-x;
@@ -545,7 +552,7 @@ h2 a:active, h2 a:link {
 
 #bottom .footer {
 	clear:both;
-	background-color: #fff;
+	padding: 30px
 	/*background:url(images/footer.png);*/
 }
 
@@ -555,6 +562,14 @@ h2 a:active, h2 a:link {
 	text-align:center;
 	width:100%;
 	list-style-type:none;
+        background-color: #333;
+        -moz-box-shadow: 0px 5px 9px #333;
+        -webkit-box-shadow: 0px 5px 9px #333;
+        box-shadow: 0px 5px 9px #333;
+}
+
+.footer ul li a {
+	color:#fff
 }
 .footer ul li {
 	display:inline;

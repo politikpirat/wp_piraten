@@ -23,10 +23,10 @@
 							</li>
 						<?php endwhile; ?>
 							<li class="navigation">
-								<h4 class="blogLink"><?php next_posts_link(__('&laquo; Older Entries', 'kubrick')) ?></h4>
+								<h4 class="blogLink"><?php next_posts_link(__('&laquo; ALT', 'kubrick')) ?></h4>
 							</li>
 							<li class="navigation">
-								<h4 class="blogLink"><?php previous_posts_link(__('Newer Entries &raquo;', 'kubrick')) ?></h4>
+								<h4 class="blogLink"><?php previous_posts_link(__('NEU&raquo;', 'kubrick')) ?></h4>
 							</li>
 						</ul>
 					<?php else : ?>
