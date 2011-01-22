@@ -17,7 +17,8 @@ if ( function_exists('register_sidebar') ) {
 // This theme uses wp_nav_menu() in one location.
         register_nav_menus( array(
                 'primary' => __( 'Primary Navigation', 'piraten' ),
-        ) );
+        	'secondary' => __( 'Secondary Navigation', 'piraten' ),
+	) );
 /**
 
 /**

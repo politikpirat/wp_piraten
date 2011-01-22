@@ -43,7 +43,8 @@ a:hover #werdePirat {
         box-shadow: 0px 5px 9px #f90;
 }
 
-
+#bottom {
+}
 /**
  * global
  */
@@ -236,7 +237,7 @@ h1 {
 	opacity:1;
 	border:0;
 	margin:30px 0px 0px 0px;
-	padding:0;
+	padding:0px 0px 30px 0px;
 }
 
 #col1 {
@@ -545,38 +546,84 @@ h2 a:active, h2 a:link {
 	/* opacity:0;*/
 }
 
+.footer ul.menu li {
+	color: white;
+	background-color: #333;
+	float: left;
+	font-weight: bold;
+	list-style: none;
+	list-style-type: none;
+	list-style-position: initial;
+	list-style-image: initial;
+	margin-right: 14px;
+	margin-left: 1em;
+	padding: 10px 0px 0px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	text-transform: uppercase;
+	width: 120px;
+} 
 
+.footer ul.menu {
+	background-color: #333;
+	margin: 0px 0px 10px 23px;
+	padding: 0px;
+	width: 100%;
+        text-align:left;
+        position:static;
+        float:right;
+        padding: 0px;
+        z-index:23;
 
-
-
-
-#bottom .footer {
-	clear:both;
-	padding: 30px
-	/*background:url(images/footer.png);*/
 }
 
-.footer ul {
-	margin: 0 auto;
-	padding:1em 0;
-	text-align:center;
-	width:100%;
-	list-style-type:none;
-        background-color: #333;
+.footer ul.menu li a {
+	font-size: 11px;
+	color: #fff; 
+	//font-weight: bold;
+}
+
+.footer ul.menu li a:hover {
+	color: #f90;
+}
+
+#bottom {
+	margin-left:30px;
+	margin-right: 30px;
+	height: 200px;
+	background-color: #333;
         -moz-box-shadow: 0px 5px 9px #333;
         -webkit-box-shadow: 0px 5px 9px #333;
         box-shadow: 0px 5px 9px #333;
 }
 
-.footer ul li a {
-	color:#fff
-}
-.footer ul li {
-	display:inline;
-	padding:.5em;
-	color:#333;
+#bottom .footer {
+	clear:both;
+	display: block;
 }
 
+.footer ul.sub-menu {
+	text-align: left;
+	list-style-type: none;
+	margin: 5px 0px 16px;
+}
+
+.footer ul.sub-menu li {
+	float: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin: 0px 0px 1px;
+	padding: 2px 0px 1px;
+	text-transform: none;
+}
+
+.footer ul.sub-menu li a {
+        font-size: 11px;
+        color: #fff;
+        font-weight: normal;
+}
 
 /*.menu > ul > li + ul,
 .menu > ul > li:hover + ul {
