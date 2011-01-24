@@ -43,8 +43,6 @@ a:hover #werdePirat {
         box-shadow: 0px 5px 9px #f90;
 }
 
-#bottom {
-}
 /**
  * global
  */
@@ -546,6 +544,12 @@ h2 a:active, h2 a:link {
 	/* opacity:0;*/
 }
 
+.footer div.menu2 {
+	diplay: block;
+	clear: both;
+	height: 250px;
+}
+
 .footer ul.menu li {
 	color: white;
 	background-color: #333;
@@ -576,20 +580,23 @@ h2 a:active, h2 a:link {
         float:right;
         padding: 0px;
         z-index:23;
+        -moz-box-shadow: 0px 5px 9px #333;
+        -webkit-box-shadow: 0px 5px 9px #333;
+        box-shadow: 0px 5px 9px #333;
+        height: auto !important;
 
 }
 
 .footer ul.menu li a {
 	font-size: 11px;
 	color: #fff; 
-	//font-weight: bold;
 }
 
 .footer ul.menu li a:hover {
 	color: #f90;
 }
 
-#bottom {
+/*#bottom {
 	margin-left:30px;
 	margin-right: 30px;
 	height: 200px;
@@ -597,11 +604,14 @@ h2 a:active, h2 a:link {
         -moz-box-shadow: 0px 5px 9px #333;
         -webkit-box-shadow: 0px 5px 9px #333;
         box-shadow: 0px 5px 9px #333;
-}
+}*/
 
-#bottom .footer {
+.footer {
 	clear:both;
 	display: block;
+        margin-left:30px;
+        margin-right: 30px;
+
 }
 
 .footer ul.sub-menu {

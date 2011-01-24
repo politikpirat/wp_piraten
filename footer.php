@@ -1,15 +1,6 @@
-		<div id="bottom">
 			<div class="footer">
-				<!--<ul>-->
-				<!--	<li><a href="http://berlin.piratenpartei.de/index.php/partei/impressum/spenden">Spenden</a></li>
-					<li><a href="http://wiki.piratenpartei.de/Berlin">Wiki</a></li>
-					<li><a href="http://berlin.piratenpartei.de/presse">Presse</a></li>
-					<li><a href="http://berlin.piratenpartei.de/partei/impressum">Kontakt</a></li>
-					<li><a href="http://berlin.piratenpartei.de/partei/impressum">Impressum</a></li>-->
-					<?php wp_nav_menu( array( 'container_class' => '', 'theme_location' => 'secondary' ) ); ?>
-				<!--</ul>-->
+				<?php wp_nav_menu( array( 'container_class' => 'menu2', 'theme_location' => 'secondary' ) ); ?>
 			</div>
-		</div>
 		</div><!-- .content -->
 	</div><!-- #body -->
 	
