@@ -36,7 +36,7 @@ print('<?xml version="1.0" encoding="UTF-8"?>');
 		<h1><div id="logoCrop"><a href="<?php echo get_option('home'); ?>/"><img src="<?= piratenImageUri() ?>/piratenturm.png" alt="Piratenpartei Berlin" height="338" width="106" id="logo" /></a></div></h1>
 		
 			<div id="headerBox">
-			<!--div id="headerSideBox"></div><div id="headerMainBox">--><a href="http://berlin.piratenpartei.de/join/mitglied-werden"><span id="werdePirat">&nbsp;</span></a><!--</div-->
+			<!--div id="headerSideBox"></div><div id="headerMainBox">--><a href="<?php echo get_option('home'); ?>/mitglied-werden"><span id="werdePirat">&nbsp;</span></a><!--</div-->
 			<!--<div class="menu">-->
 
 			<div><?php wp_nav_menu( array( 'container_class' => 'menu', 'theme_location' => 'primary' ) ); ?></div>
