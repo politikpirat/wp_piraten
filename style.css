@@ -414,7 +414,7 @@ h2 a:active, h2 a:link {
 	padding-left:10px;
 }
 .sidebar .widget_links ul li {
-	display:inline;
+	display:block;
 }
 
 #boxBecomePirateSms {
