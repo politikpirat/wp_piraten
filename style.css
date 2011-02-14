@@ -26,9 +26,9 @@ Tags: orange, piraten, fixed width, two columns, widgets
 
 #werdePirat {
 	display:block;
-	background:url(images/werdePirat0.png) no-repeat;
+	background:url(images/werdePirat0_v2.png) no-repeat;
 	width:900px;
-	height:338px;
+	height:230px;
 	margin: 30px;
 	-moz-box-shadow: 0px 5px 9px #333;
         -webkit-box-shadow: 0px 5px 9px #333;
@@ -37,7 +37,7 @@ Tags: orange, piraten, fixed width, two columns, widgets
 }
 
 a:hover #werdePirat {
-	background:url(images/werdePirat.png) no-repeat !important;
+	background:url(images/werdePirat_v2.png) no-repeat !important;
         -moz-box-shadow: 0px 5px 9px #f90;
         -webkit-box-shadow: 0px 5px 9px #f90;
         box-shadow: 0px 5px 9px #f90;
@@ -161,7 +161,7 @@ h1 {
 
 #headerBox {
 	position:relative;
-	height:410px;
+	height:302px;
 	border:0;
 	margin:0;
 	top:30px;
@@ -190,7 +190,7 @@ h1 {
 	position:absolute;
 	width:910px;
 	height:40px;
-	top:350px;
+	top:242px;
 	z-index:23;
 	background:#f90;
 	padding-left:25px;
