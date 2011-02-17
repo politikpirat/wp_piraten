@@ -20,7 +20,7 @@ function piratesEverywhere($args) {
 							<div id="twitterLink"><a href="http://twitter.com/piratenberlin">Twitter</a></div>
                                                         <div id="identicaLink"><a href="http://identi.ca/piratenberlin">Identi.ca</a></div>
 							<div id="myspaceLink"><a href="http://www.myspace.com/piratenparteiberlin">MySpace</a></div>
-							<div id="youtubeLink"><a href="http://www.youtube.com/user/Piratenpartei">YouTube</a></div>
+							<div id="youtubeLink"><a href="http://www.youtube.com/user/Piratenberlin">YouTube</a></div>
                                                 </td><td>
 							<div id="flickrLink"><a href="http://www.flickr.com/search/?q=piratenpartei&w=all">Flickr</a></div>
 							<div id="diggLink"><a href="http://digg.com/search?s=piratenpartei">Digg</a></div>
