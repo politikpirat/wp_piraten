@@ -43,23 +43,6 @@
 					<div class="entry">
 						<?php the_content(__('Read the rest of this entry &raquo;', 'kubrick')); ?>
 					</div>
-					<? /*
-					<div class="antexter">
-					Es bleibt weiter spannend &hellip;
-					</div>
-					<h4 class="blogLink"><a href="#">weiter lesen</a></h4>
-					*/ ?>
-					<div class="entryFooter">
-						<div class="postmetadata tags">
-							getaggt mit: <?php the_tags(__('Tags:', 'kubrick') . ' ', ', ', '<br />'); ?>
-						</div>
-						<div class="postmetadata">
-							abgelegt in: <?php printf(__('Posted in %s', 'kubrick'), get_the_category_list(', ')); ?>
-						</div>
-						<div class="blogArticleLinks">
-							<?php edit_post_link(__('Edit', 'kubrick'), '', ' | '); ?>  <?php comments_popup_link(__('No Comments &#187;', 'kubrick'), __('1 Comment &#187;', 'kubrick'), __('% Comments &#187;', 'kubrick'), '', __('Comments Closed', 'kubrick') ); ?>
-						</div>
-					</div>
 				</li>
 			<?php endwhile; ?>
 				<li class="navigation">
