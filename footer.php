@@ -18,5 +18,6 @@ alt="Willst du auch an der Aktion teilnehmen? Hier findest du alle relevanten In
 und Materialien:" /></a></div>
 	<!-- AKVS body end -->
 	<? } ?>
+<?php wp_footer(); ?>
 </body>
 </html>
