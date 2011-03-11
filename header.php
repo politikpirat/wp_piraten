@@ -33,39 +33,15 @@ print('<?xml version="1.0" encoding="UTF-8"?>');
 </head>
 <body class="home">
 	<div id="body">
-		<h1><div id="logoCrop"><a href="<?php echo get_option('home'); ?>/"><img src="<?= piratenImageUri() ?>/piratenturm_v2.png" alt="Piratenpartei Berlin" height="230" width="106" id="logo" /></a></div></h1>
-		
 			<div id="headerBox">
-			<!--div id="headerSideBox"></div><div id="headerMainBox">--><a href="<?php echo get_option('home'); ?>/mitglied-werden"><span id="werdePirat">&nbsp;</span></a><!--</div-->
-			<!--<div class="menu">-->
+				<a href="http://berlin.piratenpartei.de/mitglied-werden"><span id="werdePirat">&nbsp;</span></a>
 
-			<div><?php wp_nav_menu( array( 'container_class' => 'menu', 'theme_location' => 'primary' ) ); ?></div>
+			<?php wp_nav_menu( array( 'container_class' => 'menu', 'theme_location' => 'primary' ) ); ?>
 
-				<? /* Widgetized sidebar, if you have the plugin installed. */
-				if (function_exists('dynamic_sidebar') ) {
-					dynamic_sidebar(2, false);
-				} else {
-					wp_widget_pages(array( 'classname' => '', 
-									'description' => '', 
-									'before_widget' => '',
-									'before_title' => '',
-									'after_title' => '',
-									'after_widget' => ''
-				));
-				}
-				?>
-			<!--</div>-->
 		</div>
 		<div style="clear:both"></div>
-
 		<div id="content">
 			<div id="col1">
-				<!--<div id="pageHeader">
-					<h2>
-						<a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a>
-						div class="description"><?php bloginfo('description'); ?></div>
-					</h2>
-				</div>-->	
 				<?
 				/**
 				 * header.php lässt drei DIVs offen:
