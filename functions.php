@@ -1,18 +1,21 @@
 <?php
 if ( function_exists('register_sidebar') ) {
-    register_sidebar(array(
+    register_sidebar(array(1,
+	'name'          => __('Sidebar') . ' 1',
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h2 class="widgettitle">',
         'after_title' => '</h2>',
     ));
-    register_sidebar(array(
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '',
-        'after_title' => '',
+    register_sidebar(array(2,
+	'name'          => __('Sidebar') . ' 2',
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget' => '</li>',
+        'before_title' => '<h2 class="widgettitle">',
+        'after_title' => '</h2>',
     ));
 }
+
 
 // This theme uses wp_nav_menu() in one location.
         register_nav_menus( array(
