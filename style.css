@@ -26,21 +26,20 @@ Tags: orange, piraten, fixed width, two columns, widgets
 
 #werdePirat {
 	display:block;
-	background:url(images/werdePirat0_v2.png) no-repeat;
-	width:900px;
-	height:230px;
-	margin: 30px;
-	-moz-box-shadow: 0px 5px 9px #333;
-        -webkit-box-shadow: 0px 5px 9px #333;
-        box-shadow: 0px 5px 9px #333;
+	background:url(images/werdePirat0_v3.png) no-repeat;
+	width:950px;
+	height:243px;
+}
 
+#sitetitle {
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	width: 150px;
 }
 
 a:hover #werdePirat {
-	background:url(images/werdePirat_v2.png) no-repeat !important;
-        -moz-box-shadow: 0px 5px 9px #f90;
-        -webkit-box-shadow: 0px 5px 9px #f90;
-        box-shadow: 0px 5px 9px #f90;
+	background:url(images/werdePirat_v3.png) no-repeat !important;
 }
 
 #error {
@@ -130,26 +129,15 @@ h4 {
 }
 
 #body {
-	margin:0 auto;
+	margin: 5px auto;
         background-color:#f90;
 	width:960px;
-        -moz-box-shadow: 0px 5px 9px #333;
-        -webkit-box-shadow: 0px 5px 9px #333;
-        box-shadow: 0px 5px 9px #333;
+	top: 28px;
 }
 
 h1 {
 	position:relative;
 	margin:0;
-}
-#logoCrop {
-	height:230px;
-	overflow:hidden;
-	position:absolute;
-	top:30px;
-	left:80px;
-	z-index:100;
-	border: none;
 }
 
 #logoCrop img {
@@ -160,65 +148,40 @@ h1 {
 }
 
 #headerBox {
-	position:relative;
-	height:302px;
-	border:0;
-	margin:0;
-	top:30px;
-	width:960px;
+	position:absolute;
+	top:28px;
+	border: none;
+	padding: 5px;
+	width:950px;
 	white-space:nowrap;
 	background-color: #f90;
 }
-#headerMainBox {
-	position:relative;
-	height:360px;
-	border:0;
-	margin:0;
-	top:0;
-	width:640px;
-	overflow:hidden;
-	white-space:nowrap;
-}
-#headerSideBox {
-	float:right;
-	height:410px;
-	width:320px;
-	background:url(images/headerSideBox.jpg) no-repeat;
-}
 
 .menu {
-	position:absolute;
-	width:910px;
+	position:relative;
+	width:950px;
 	height:40px;
-	top:242px;
 	z-index:23;
 	background:#f90;
-	padding-left:25px;
-	padding-right:25px;
+	padding-top: 5px;
 }
 
 .menu li {
 	display:block;
-	background-color:#fff;
 }
 
 .menu ul {
 	margin:0;
-	padding:0 0 0 0px;
-	width: 910px;
-	top: 0px;
+	padding: 0px;
+	width: 950px;
 }
 
 .menu > ul > li {
 	float:left;
-	position:static;
 	text-align:center;
-	width:168px;
-	padding:10px 2px;
-	margin:5px;
-        -moz-box-shadow: 0px 5px 9px #333;
-        -webkit-box-shadow: 0px 5px 9px #333;
-        box-shadow: 0px 5px 9px #333;
+	width:20%;
+	padding:10px 0px;
+	background-color: #333;
 }
 
 .menu > ul > li > ul {
@@ -228,19 +191,29 @@ h1 {
 	text-align:left;
 	position:static;
         float:right;
-	background-color:#fff;
+	background-color:#333;
 	padding: 0px;
 	z-index:23;
 }
 .menu > ul > li:hover > ul {
-	display:block !important;
+	display: block !important;
         margin-bottom:0px;
+}
+
+.menu > ul > li:hover > ul.submenu {
+	background-color:#000;
 }
 
 .menu ul > li a {
 	font-weight: bold;
 	font-size: 18px;
+	color: #fff;
 }
+
+.menu ul > li a:hover {
+        color: #f90;
+}
+
 .menu li li a {
 	padding:3px;
 	display:block;
@@ -260,35 +233,26 @@ h1 {
 
 
 #content {
-	position:relative;
+	position:absolute;
+	top: 322px;
 	background-color:#f90;
 	opacity:1;
-	border:0;
-	margin:30px 0px 0px 0px;
-	padding:0px 0px 30px 0px;
+	border: none;
+	margin: 0px 0px 5px 0px;
+	padding:0px 0px 5px 0px;
 }
 
 #col1 {
 	float:left;
-	width:600px;
+	width:550px;
 	background-color:#fff;
-	margin: 0.5em 0.5em 0.5em 30px;
-        -moz-box-shadow: 0px 5px 9px #333;
-        -webkit-box-shadow: 0px 5px 9px #333;
-        box-shadow: 0px 5px 9px #333;
+	margin: 5px;
 }
 
-#pageHeader {
-	background:url(images/homeBlog.png) no-repeat;
-	height:50px;
-	margin-top:0px;
-}
-
-#pageHeader h2 {
-	margin:0;
-	font-size:20px;
-	font-weight:normal;
-	padding:15px 0 0 68px;
+#col2 {
+	background-color: transparent;
+	margin-left: 560px;
+	width: 400px;
 }
 
 h2 a:active, h2 a:link {
@@ -346,9 +310,10 @@ h2 a:active, h2 a:link {
 }
 
 .sidebar {
-	margin:0 0 0 640px;
-	padding: 0.5em 10px;
-	width:280px;
+	float: right;
+	margin-right: 5px;
+	margin-top: 5px;
+	width: 193px;
 	background-color:#f90;
 }
 
@@ -356,13 +321,10 @@ h2 a:active, h2 a:link {
 .sidebar > .box, .sidebar li.widget {
 	display:block;
 	background-color:#fff;
-	margin:0 0 20px 0;
+	margin:0 0 5px 0;
 	padding:1em;
 	font-size:11px;
 	overflow:visible;
-        -moz-box-shadow: 0px 5px 9px #333;
-        -webkit-box-shadow: 0px 5px 9px #333;
-        box-shadow: 0px 5px 9px #333;
 }
 
 .sidebar > .box .content {
@@ -385,9 +347,10 @@ h2 a:active, h2 a:link {
 }
 
 .sidebar .box h2,
-.sidebar li.widget h2
+.sidebar li.widget h2, h2.widgettitle
  {
-	padding: 0px 10px 10px;
+	padding: 0.5em;
+	font-size: 1.3em;
 	margin:0;
 	font-weight:bold;
 }
@@ -395,7 +358,7 @@ h2 a:active, h2 a:link {
 .sidebar li.widget ul {
 	list-style-type: none;
 	margin: 0px;
-	padding-left: 1.5em;
+	padding-left: 0.5em;
 }
 
 .sidebar li.widget ul li a {
@@ -415,6 +378,11 @@ h2 a:active, h2 a:link {
 }
 .sidebar .widget_links ul li {
 	display:block;
+}
+
+h2.widgettitle {
+	padding: 0.5em;
+	font-size: 1.25em;
 }
 
 #boxBecomePirateSms {
@@ -573,9 +541,9 @@ h2 a:active, h2 a:link {
 }
 
 .footer div.menu2 {
-	diplay: block;
-	clear: both;
-	height: 300px;
+	display: table-cell;
+	clear:both;
+	width: 950px;
 }
 
 .footer ul.menu li {
@@ -600,7 +568,7 @@ h2 a:active, h2 a:link {
 
 .footer ul.menu {
 	background-color: #333;
-	margin: 0px 0px 10px 23px;
+	margin: 0px 0px 0px 5px;
 	padding: 0px;
 	width: 100%;
         text-align:left;
@@ -608,9 +576,6 @@ h2 a:active, h2 a:link {
         float:right;
         padding: 0px;
         z-index:23;
-        -moz-box-shadow: 0px 5px 9px #333;
-        -webkit-box-shadow: 0px 5px 9px #333;
-        box-shadow: 0px 5px 9px #333;
         height: auto !important;
 
 }
@@ -625,11 +590,10 @@ h2 a:active, h2 a:link {
 }
 
 .footer {
-	clear:both;
+	clear: both;
 	display: block;
-        margin-left:30px;
-        margin-right: 30px;
-
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .footer ul.sub-menu {
@@ -781,7 +745,7 @@ h2 a:active, h2 a:link {
 
 
 div#akct {
-	position: absolute; top:0px; right: 0px; z-index: 2342; width:113px; height:88px;
+	position: absolute; top:28px; right: 0px; z-index: 2342; width:113px; height:88px;
 	background-image: url(http://wiki.vorratsdatenspeicherung.de/images/Akvse.gif);
 	background-repeat: no-repeat;
 	background-position: right top;

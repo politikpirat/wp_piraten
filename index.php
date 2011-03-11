@@ -44,7 +44,10 @@
 			 * #body > .content
 			 **/
 			?>
-<?php get_sidebar(); ?>
+		<div id="col2">
+			<?php get_sidebar(1); ?>
+			<?php get_sidebar(2); ?>
+		</div>
 		<?
 		/**
 		 * Jetzt ist nur noch ein DIV offen:

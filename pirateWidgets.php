@@ -15,7 +15,7 @@ function piratesEverywhere($args) {
 	print <<<END
 				<div class="box boxPirateCommunities" id="">
 					<h2>Piraten Überall</h2>
-					<div class="content linklist">
+					<div class="linklist">
 						<table id="linkTable"><tr><td>
 							<div id="twitterLink"><a href="http://twitter.com/piratenberlin">Twitter</a></div>
                                                         <div id="identicaLink"><a href="http://identi.ca/piratenberlin">Identi.ca</a></div>
