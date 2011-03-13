@@ -24,22 +24,31 @@ Tags: orange, piraten, fixed width, two columns, widgets
 	width:100%;
 }
 
+#background {
+	height:1716px;
+	position:fixed;
+	background:url(images/background.png) no-repeat;
+}
+
 #werdePirat {
 	display:block;
-	background:url(images/werdePirat0_v3.png) no-repeat;
+	background:url(images/header_v11.png) no-repeat;
 	width:950px;
-	height:243px;
+	height:200px;
 }
 
 #sitetitle {
-	float: left;
-	font-size: 24px;
+	float: right;
+	font-size: 32px;
 	font-weight: bold;
-	width: 150px;
+	padding-right: 5px;
 }
 
-a:hover #werdePirat {
-	background:url(images/werdePirat_v3.png) no-repeat !important;
+#sitedescription {
+	float:right;
+	font-size: 14px;
+        padding-right: 5px;
+	clear:right;
 }
 
 #error {
@@ -72,7 +81,6 @@ a:hover #werdePirat {
 body {
 	margin:0;
 	padding:0;
-	background-color:#888;
 	color:#333;
 	font-size:11pt;
 }
@@ -109,15 +117,7 @@ blockquote {
  * fonts
  */
 h2, h4, h6, body, blockquote, em, h1, h2, h3, h5, i, .feedBy {
-        font-family: Corbel,
-             "Lucida Grande",
-             "Lucida Sans Unicode",
-             "Lucida Sans",
-             "DejaVu Sans",
-             "Bitstream Vera Sans",
-             "Liberation Sans",
-             Verdana,
-             sans-serif;
+        font-family: Arial;
 }
  
 
@@ -129,8 +129,7 @@ h4 {
 }
 
 #body {
-	margin: 5px auto;
-        background-color:#f90;
+	/*margin: 5px auto;*/
 	width:960px;
 	top: 28px;
 }
@@ -154,7 +153,6 @@ h1 {
 	padding: 5px;
 	width:950px;
 	white-space:nowrap;
-	background-color: #f90;
 }
 
 .menu {
@@ -162,7 +160,6 @@ h1 {
 	width:950px;
 	height:40px;
 	z-index:23;
-	background:#f90;
 	padding-top: 5px;
 }
 
@@ -234,8 +231,7 @@ h1 {
 
 #content {
 	position:absolute;
-	top: 322px;
-	background-color:#f90;
+	top: 275px;
 	opacity:1;
 	border: none;
 	margin: 0px 0px 5px 0px;
@@ -590,6 +586,7 @@ h2.widgettitle {
 }
 
 .footer {
+	padding-top: 10px;
 	clear: both;
 	display: block;
 	margin-left: 5px;

@@ -32,10 +32,12 @@ print('<?xml version="1.0" encoding="UTF-8"?>');
 	<?php wp_head(); ?>
 </head>
 <body class="home">
+	<div id="background"></div>
 	<div id="body">
 			<div id="headerBox">
-				<a href="http://berlin.piratenpartei.de/mitglied-werden"><span id="werdePirat">&nbsp;</span></a>
-
+				<div id="sitetitle"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></div>
+				<div id="sitedescription"><?php bloginfo('description'); ?></div>
+				<span id="werdePirat">&nbsp;</span>
 			<?php wp_nav_menu( array( 'container_class' => 'menu', 'theme_location' => 'primary' ) ); ?>
 
 		</div>
