@@ -32,25 +32,17 @@ Tags: orange, piraten, fixed width, two columns, widgets
 	background:url(images/background.png) no-repeat;
 }
 
-#werdePirat {
-	display:block;
-	background:url(images/header_v11.png) no-repeat;
-	width:950px;
-	height:200px;
-}
-
 #sitetitle {
-	float: right;
-	font-size: 32px;
+	font-size: 50px;
 	font-weight: bold;
-	padding-right: 5px;
+	padding-left: 5px;
+	line-height: 70px;
 }
 
 #sitedescription {
-	float:right;
-	font-size: 14px;
-        padding-right: 5px;
-	clear:right;
+	font-size: 25px;
+        padding-left: 5px;
+	line-height: 40px;
 }
 
 #error {
@@ -233,7 +225,7 @@ h1 {
 
 #content {
 	position:absolute;
-	top: 275px;
+	top: 200px;
 	opacity:1;
 	border: none;
 	margin: 0px 0px 5px 0px;

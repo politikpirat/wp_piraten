@@ -32,12 +32,10 @@ print('<?xml version="1.0" encoding="UTF-8"?>');
 	<?php wp_head(); ?>
 </head>
 <body class="home">
-	<div id="background"><img src="<?php bloginfo('url'); ?>/wp-content/themes/wp_piraten/images/background.png"/></div>
 	<div id="body">
 			<div id="headerBox">
 				<div id="sitetitle"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></div>
 				<div id="sitedescription"><?php bloginfo('description'); ?></div>
-				<span id="werdePirat">&nbsp;</span>
 			<?php wp_nav_menu( array( 'container_class' => 'menu', 'theme_location' => 'primary' ) ); ?>
 
 		</div>
