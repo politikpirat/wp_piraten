@@ -33,7 +33,7 @@ Tags: orange, piraten, fixed width, two columns, widgets
 }
 
 #sitetitle {
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: bold;
 	padding-left: 5px;
 	line-height: 70px;
@@ -43,6 +43,7 @@ Tags: orange, piraten, fixed width, two columns, widgets
 	font-size: 25px;
         padding-left: 5px;
 	line-height: 40px;
+	font-weight: bold;
 }
 
 #error {
