@@ -18,7 +18,8 @@ print('<?xml version="1.0" encoding="UTF-8"?>');
 	<link rel="alternate" type="application/rss+xml" title="<?php printf(__('%s RSS Feed', 'kubrick'), get_bloginfo('name')); ?>" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="<?php printf(__('%s Atom Feed', 'kubrick'), get_bloginfo('name')); ?>" href="<?php bloginfo('atom_url'); ?>" /> 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-	
+	<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" type="image/x-icon" /> 
+
 	<?  if ( 0 and is_home() ) { ?>
 *	<script type="text/javascript" src="/wp-content/themes/piraten/vdl/vdl.js"></script>
 	<script type="text/javascript"><!--
