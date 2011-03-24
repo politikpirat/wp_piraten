@@ -45,6 +45,22 @@
 			 **/
 			?>
 		<div id="col2">
+			<?php 
+				$options = get_option('piraten_theme_options');
+				if($options['show'] == 1) : 
+			?>
+					<div id='steckbrief'>
+						<div id="profilbild"><img height="175px" width="150px" src="<?php _e($options['purl']);?>"/>
+						</div>
+						<h3>Kandidateninfo</h3>
+						<ul>
+						<li><b>Name:</b> <br /> <?php _e($options['name']);?></li>
+						<li><b>Kandidatur:</b> <br /> <?php _e($options['kandidatur']);?></li>
+						<li><b>Themen:</b> <br /> <?php _e($options['politik']);?></li>
+						<li><b>Kurzbiographie:</b> <br /> <?php _e($options['bio']);?></li>
+						</ul>
+					</div>
+			<?php endif;?>
 			<?php get_sidebar(1); ?>
 			<?php get_sidebar(2); ?>
 		</div>

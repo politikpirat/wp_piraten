@@ -5,7 +5,7 @@ Description: Wordpress Pirate-Theme
 Version: 0.2
 Author: Martin Delius
 Author URI: http://twitter.com/beapirate
-Tags: orange, piraten, fixed width, two columns, widgets
+Tags: white, orange, piraten, fixed width, three columns, widgets
 
 	PIRATEN v0.2
 	 http://berlin.piratenpartei.de/
@@ -24,12 +24,38 @@ Tags: orange, piraten, fixed width, two columns, widgets
 	width:100%;
 }
 
+#steckbrief {
+	background-color: white;
+	margin: 5px;
+	padding: 5px;
+	border-bottom: 5px solid #F90;
+}
+
+#steckbrief ul {
+	list-style-type: none;
+	padding: 5px;
+	line-height: 160%;
+}
+
+#steckbrief li {
+	padding-bottom:7px;
+}
+
+#info {
+	text-align: right;
+}
+
 #background {
 	float:right;
 	height:1716px;
 	width:700px;
 	overflow:hidden;
 	background:url(images/background.png) no-repeat;
+}
+
+#profilbild {
+	float: right;
+	margin: 5px;
 }
 
 #sitetitle {
