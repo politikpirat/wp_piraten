@@ -134,6 +134,10 @@ h1 {
 	margin:0;
 }
 
+img {
+	border: none;
+}
+
 #logoCrop img {
 	border: 0px none;
 }
