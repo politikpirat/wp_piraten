@@ -28,7 +28,9 @@ Tags: white, orange, piraten, fixed width, three columns, widgets
 	background-color: white;
 	margin: 5px;
 	padding: 5px;
+	font-size: 80%;
 	border-bottom: 5px solid #F90;
+
 }
 
 #steckbrief ul {
