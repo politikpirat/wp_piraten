@@ -47,7 +47,7 @@
 		<div id="col2">
 			<?php 
 				$options = get_option('piraten_theme_options');
-				if($options['show'] == 1) : 
+				if( $options['show'] == 1 AND is_home() ) : 
 			?>
 					<div id='steckbrief'>
 						<div id="profilbild"><img height="175px" width="150px" src="<?php _e($options['purl']);?>"/>
