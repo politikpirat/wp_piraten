@@ -38,6 +38,16 @@ Tags: orange, piraten, fixed width, two columns, widgets
 	width: 150px;
 }
 
+#sidebarbanner .widgettitle {
+	background-color: white;
+	font-size: 1.3em;
+}
+
+#sidebarbanner img, #sidebarbanner a {
+	padding: 0;
+	margin: 0;
+}
+
 a:hover #werdePirat {
 	background:url(images/werdePirat_v3.png) no-repeat !important;
 }
@@ -72,7 +82,8 @@ a:hover #werdePirat {
 body {
 	margin:0;
 	padding:0;
-	background-color:#888;
+	background: url(images/background_v1.png);
+	//background-color:#888;
 	color:#333;
 	font-size:11pt;
 }

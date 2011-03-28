@@ -41,7 +41,7 @@ add_filter( 'wp_page_menu_args', 'piraten_page_menu_args' );
 
 
 include 'pirateWidgets.php';
-include 'piratenbanner.php';
+include 'bannerwidget.php';
 
 load_theme_textdomain('kubrick');
 
