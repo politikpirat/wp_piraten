@@ -142,7 +142,7 @@ h4 {
 
 #body {
 	margin: 5px auto;
-        background-color:#f90;
+        //background-color:#f90;
 	width:960px;
 	top: 28px;
 }
@@ -166,7 +166,7 @@ h1 {
 	padding: 5px;
 	width:950px;
 	white-space:nowrap;
-	background-color: #f90;
+	//background-color: #f90;
 }
 
 .menu {
@@ -174,7 +174,7 @@ h1 {
 	width:950px;
 	height:40px;
 	z-index:23;
-	background:#f90;
+	//background:#f90;
 	padding-top: 5px;
 }
 
@@ -247,7 +247,7 @@ h1 {
 #content {
 	position:absolute;
 	top: 322px;
-	background-color:#f90;
+	//background-color:#f90;
 	opacity:1;
 	border: none;
 	margin: 0px 0px 5px 0px;
@@ -326,7 +326,7 @@ h2 a:active, h2 a:link {
 	margin-right: 5px;
 	margin-top: 5px;
 	width: 193px;
-	background-color:#f90;
+	//background-color:#f90;
 }
 
 
@@ -371,6 +371,10 @@ h2 a:active, h2 a:link {
 	list-style-type: none;
 	margin: 0px;
 	padding-left: 0.5em;
+}
+
+.sidebar li.widget ul li{
+	padding-bottom: 5px;
 }
 
 .sidebar li.widget ul li a {
@@ -422,41 +426,6 @@ h2.widgettitle {
 #boxBecomePirateSms strong {
 	display:block;	
 }
-
-#sidebtn {
-        text-alignment:right;
-        font-weight:bold;
-        font-size:18px;
-        margin-bottom:0.5em;
-        padding:0.2em;
-        background:#fff;
-        border:1px solid #f90;
-        -moz-border-radius:9px;
-        -webkit-border-radius:9px;
-        border-radius:9px;
-        -moz-box-shadow: 5px 5px 9px #999;
-        -webkit-box-shadow: 5px 5px 9px #999;
-        box-shadow: 5px 5px 9px #999;
-}
-#sidebtn:hover {
-        background:#f90;
-        color:#fff;
-        border:1px solid #fff;
-        -moz-border-radius:9px;
-        -webkit-border-radius:9px;
-        border-radius:9px;
-        -moz-box-shadow: 5px 5px 9px #ccc;
-        -webkit-box-shadow: 5px 5px 9px #ccc;
-        box-shadow: 5px 5px 9px #ccc;"
-}
-#sidebtn a {
-        text-decoration:none;
-        color:#333;
-}
-#sidebtn a:hover {
-        color:#fff;
-}
-
 
 #boxCultureFlat .cultureFlatBar {
 	background:url(images/progressEmpty.gif) repeat-x;
