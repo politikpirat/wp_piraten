@@ -167,16 +167,18 @@ wp_register_widget_control('pirateDonationProgress', 'Piraten Spendensammlungs F
 function pirateCollectionProgress($args) {
 	extract($args);
 	$options = get_option('widget_pirate_collection_progress');
+	$title = ($options['title']);
+	$link = ($options['link']);
 	$currentValue = ($options['currentValue']) ? $options['currentValue'] : 23;
 	$targetValue = ($options['targetValue']) ? $options['targetValue'] : 42;
 	$daysLeft = ($options['endDate']) ? floor((strtotime($options['endDate']) - time()) / 86400) : 42;
 	$percent = floor(($currentValue / $targetValue) * 100);
-	
+		
 	print <<<END
 		<div id="boxVote" class="box">
-			<h2>Piraten in den Bundestag</h2>
+			<h2>{$title}</h2>
 			<div class="content">
-				<a href="http://ich.waehlepiraten.de">Mit Deiner Unterschrift in den Bundestag!</a>
+				<a href="{$link}">Unterstütz uns mit deiner Unterschrif!t</a>
 				<div class="box boxBarometer">
 					<div class="progressbar"><div class="progress" style="width:{$percent}%"></div></div>
 					Stand: <span class="boxBarometerCurrent">{$currentValue}</span> von
@@ -194,6 +196,8 @@ function pirateCollectionProgressControl() {
 		$newoptions['currentValue'] = strip_tags(stripslashes($_POST['pirateCollectionProgressCurrentValue']));
 		$newoptions['targetValue'] = strip_tags(stripslashes($_POST['pirateCollectionProgressTargetValue']));
 		$newoptions['endDate'] = strip_tags(stripslashes($_POST['pirateCollectionProgressEndDate']));
+		$newoptions['title'] = strip_tags(stripslashes($_POST['pirateCollectionProgressTitle']));
+		$newoptions['link'] = strip_tags(stripslashes($_POST['pirateCollectionProgressLink']));
 	}
 
 	if ( $options != $newoptions ) {
@@ -204,8 +208,17 @@ function pirateCollectionProgressControl() {
 	$currentValue = attribute_escape( $options['currentValue'] );
 	$targetValue = attribute_escape( $options['targetValue'] );
 	$endDate = attribute_escape( $options['endDate'] );
-
+	$title = attribute_escape( $options['title'] );
+	$link = attribute_escape( $options['link'] );
 ?>
+	<p><label for="pirateCollectionProgressTitle">
+        Titel: <input type="text" class="widefat" id="pirateCollectionProgressTitle" name="pirateCollectionProgressTitle" value="<?php echo $title ?>" /></label>
+        </p>
+
+	<p><label for="pirateCollectionProgressLink">
+        Unterschriftenlink: <input type="text" class="widefat" id="pirateCollectionProgressLink" name="pirateCollectionProgressLink" value="<?php echo $link ?>" /></label>
+        </p>
+
 	<p><label for="pirateCollectionProgressCurrentValue">
 	Aktueller Stand: <input type="text" class="widefat" id="pirateCollectionProgressCurrentValue" name="pirateCollectionProgressCurrentValue" value="<?php echo $currentValue ?>" /></label>
 	</p>
