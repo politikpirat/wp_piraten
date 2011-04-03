@@ -178,7 +178,7 @@ function pirateCollectionProgress($args) {
 		<div id="boxVote" class="box">
 			<h2>{$title}</h2>
 			<div class="content">
-				<a href="{$link}">Unterstütz uns mit deiner Unterschrif!t</a>
+				<a href="{$link}">Unterstüte uns mit deiner Unterschrift!</a>
 				<div class="box boxBarometer">
 					<div class="progressbar"><div class="progress" style="width:{$percent}%"></div></div>
 					Stand: <span class="boxBarometerCurrent">{$currentValue}</span> von
