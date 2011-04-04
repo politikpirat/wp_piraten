@@ -348,6 +348,7 @@ h2 a:active, h2 a:link {
 	font-size:11px;
 	overflow:visible;
 	border-bottom: 5px solid #f90;
+	word-wrap:break-word 
 }
 
 .sidebar > .box .content {
