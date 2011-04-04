@@ -2,7 +2,7 @@
 				<?php wp_nav_menu( array( 'container_class' => 'menu2', 'theme_location' => 'secondary' ) ); ?>
 			</div>
                 </div><!-- .content -->
-	</div><!-- #body -->
+		</div><!-- #body -->
 	
 	<?  if ( is_home() ) { ?>
 	
