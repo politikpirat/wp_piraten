@@ -18,6 +18,11 @@ Tags: orange, piraten, fixed width, two columns, widgets
 
 */
 
+.home p {
+	clear: both;
+	padding: 5px;
+	position: relative;
+}
 
 /* WP stuff */
 #comment {
@@ -336,6 +341,7 @@ h2 a:active, h2 a:link {
 	padding:1em;
 	font-size:11px;
 	overflow:visible;
+	word-wrap: break-word;
 }
 
 .sidebar > .box .content {
