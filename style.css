@@ -321,8 +321,8 @@ h2 a:active, h2 a:link {
 	margin:5px 0 5px 0;
 	padding:1em;
 	font-size:11px;
-	overflow:visible;
 	border-bottom: 5px solid #f90;
+	word-wrap: break-word;
 }
 
 .sidebar > .box .content {
@@ -604,7 +604,7 @@ h2.widgettitle {
 
 .footer ul.sub-menu li {
 	float: none;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: lighter Arial,  sans-serif;
 	font-weight: normal;
 	margin: 0px 0px 1px;
 	padding: 2px 0px 1px;
