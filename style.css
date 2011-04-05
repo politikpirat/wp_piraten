@@ -238,6 +238,7 @@ h1 {
 	position:static;
 	padding:1px;
 	font-size:11px;
+	word-wrap: break-word;
 }
 
 
