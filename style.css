@@ -20,8 +20,9 @@ Tags: orange, piraten, fixed width, two columns, widgets
 
 .home p {
 	clear: both;
-	padding: 5px;
+	//padding: 5px;
 	position: relative;
+	margin: 0.5em 0;
 }
 
 /* WP stuff */
@@ -88,7 +89,7 @@ a:hover #werdePirat {
 body {
 	margin:0;
 	padding:0;
-	background: url(images/background_v4.png) repeat;
+	background: url(images/bg-tags.png) repeat;
 	color:#333;
 	font-size:11pt;
 }
@@ -118,22 +119,15 @@ blockquote {
 }
 
 .blog.module a {
-	text-decoration: underline;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 /**
  * fonts
  */
 h2, h4, h6, body, blockquote, em, h1, h2, h3, h5, i, .feedBy {
-        font-family: Corbel,
-             "Lucida Grande",
-             "Lucida Sans Unicode",
-             "Lucida Sans",
-             "DejaVu Sans",
-             "Bitstream Vera Sans",
-             "Liberation Sans",
-             Verdana,
-             sans-serif;
+	font-family: lighter Arial, sans-serif
 }
  
 
@@ -251,7 +245,6 @@ h1 {
 #content {
 	position:absolute;
 	top: 322px;
-	//background-color:#f90;
 	opacity:1;
 	border: none;
 	margin: 0px 0px 5px 0px;
@@ -277,6 +270,7 @@ h2 a:active, h2 a:link {
 
 .blog.module {
 	font-size:12px;
+	line-height: 150%;
 }
 .blog.module ul {
 	padding: 6px 23px 23px 23px;
@@ -313,6 +307,12 @@ h2 a:active, h2 a:link {
 	padding:10px;
 	background-color: #333;
 	color: #f90;
+}
+
+.blog.module .entry ul {
+	list-style: none;
+	font-size: 105%;
+	padding: 6px 0px 6px 23px;
 }
 
 .blog.module .entryFooter a {
