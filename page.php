@@ -22,6 +22,9 @@
 <?php edit_post_link(__('Edit this entry.', 'kubrick'), '<p>', '</p>'); ?>
 	</div>
 </div><!-- .col1 -->
-<?php get_sidebar(); ?>
+               <div id="col2">
+                        <?php get_sidebar(1); ?>
+                        <?php get_sidebar(2); ?>
+               </div>
 
 <?php get_footer(); ?>
