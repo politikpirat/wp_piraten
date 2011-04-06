@@ -133,14 +133,15 @@ blockquote {
 }
 
 .blog.module a {
-	text-decoration: underline;
+	font-weight:bold;
+	color: #333;
 }
 
 /**
  * fonts
  */
 h2, h4, h6, body, blockquote, em, h1, h2, h3, h5, i, .feedBy {
-        font-family: Arial;
+        font-family: lighter Arial, sans-serif;
 }
  
 
@@ -284,6 +285,7 @@ h2 a:active, h2 a:link {
 
 .blog.module {
 	font-size:12px;
+	line-height: 150%;
 }
 .blog.module ul {
 	padding: 6px 23px 23px 23px;
@@ -383,6 +385,10 @@ h2 a:active, h2 a:link {
 	list-style-type: none;
 	margin: 0px;
 	padding-left: 0.5em;
+}
+
+.sidebar li.widget ul li {
+	padding-bottom: 5px;
 }
 
 .sidebar li.widget ul li a {
