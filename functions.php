@@ -29,7 +29,7 @@ function piraten_page_menu_args( $args ) {
 }add_filter( 'wp_page_menu_args', 'piraten_page_menu_args' );
 
 
-include 'pirateWidgets.php';
+include 'bannerwidget.php';
 
 require_once ( get_stylesheet_directory() . '/theme-options.php' );
 ?>
