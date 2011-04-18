@@ -10,10 +10,11 @@
 	<?php if (have_posts()) : ?>
 		<?php if (is_category()) : ?>		
 		<ul>
-		<?php $query = new WP_Query('title=single_cat_title()'); ?>
-		<?php if ($query->have_posts()) : $query->the_post();  ?>
+		<?php $current_category = single_cat_title("", false); ?>
+		<?php $master = new WP_Query(array('pagename' => $current_category )); ?>
+		<?php if ($master->have_posts()) : $master->the_post();  ?>
 			<li  class="master" id="master">
-                                 <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h2>
+				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h2>
                                 <div class="entry">
 						<?php the_content(); ?>
                                 </div>
