@@ -244,6 +244,7 @@ h1 {
 
 
 #content {
+	width: 960px;
 	position:absolute;
 	top: 322px;
 	opacity:1;
@@ -610,8 +611,8 @@ h2.widgettitle {
 .footer {
 	clear: both;
 	display: block;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin: 5px auto;
+	width: 950px;
 }
 
 .footer ul.sub-menu {

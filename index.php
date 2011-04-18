@@ -38,20 +38,14 @@
 					<?php endif; ?>
 				</div><!-- .blog.module -->
 			</div><!-- .col1 -->
-			<?
-			/**
-			 * an dieser Stelle sind noch zwei DIVs offen:
-			 * #body > .content
-			 **/
-			?>
 		<div id="col2">
 			<?php get_sidebar(1); ?>
 			<?php get_sidebar(2); ?>
 		</div>
-		<?
-		/**
-		 * Jetzt ist nur noch ein DIV offen:
-		 * #body
-		 **/
-		?>
+			 <?
+                        /**
+                         * an dieser Stelle sind noch zwei DIVs offen:
+                         * #body > .content
+                         **/
+                        ?>
 <?php get_footer(); ?>

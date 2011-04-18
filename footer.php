@@ -1,8 +1,8 @@
-			<div class="footer">
-				<?php wp_nav_menu( array( 'container_class' => 'menu2', 'theme_location' => 'secondary' ) ); ?>
-			</div>
-                </div><!-- .content -->
-		</div><!-- #body -->
+	                <div class="footer">
+                                <?php wp_nav_menu( array( 'container_class' => 'menu2', 'theme_location' => 'secondary' ) ); ?>
+                        </div>
+	<?php wp_footer(); ?>
+	</div><!-- .content -->
 	
 	<?  if ( is_home() ) { ?>
 	
@@ -18,6 +18,6 @@ alt="Willst du auch an der Aktion teilnehmen? Hier findest du alle relevanten In
 und Materialien:" /></a></div>
 	<!-- AKVS body end -->
 	<? } ?>
-<?php wp_footer(); ?>
+</div><!-- #body -->
 </body>
 </html>

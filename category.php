@@ -5,7 +5,7 @@
  * #body > .content > .col1
  **/
 ?>
-</div>
+	</div><!--.col1-->
 	<div class="cat module">
 	<?php if (have_posts()) : ?>
 		<?php if (is_category()) : ?>		
@@ -33,7 +33,6 @@
 			<?php endif; ?>
 		<?php endwhile; ?>
 		</ul>
-		</div>
 		<?php endif; ?>
 	<?php endif; ?>
 	</div><!--.cat.module-->
@@ -42,8 +41,13 @@
                         <?php get_sidebar(2); ?>
         	</div>
 
+			<?
+                        /**
+                         * an dieser Stelle sind noch zwei DIVs offen:
+                         * #body > .content
+                         **/
+                        ?>
 
 	<?php get_footer(); ?>
-        
 
 
