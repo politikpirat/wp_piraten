@@ -269,6 +269,33 @@ h2 a:active, h2 a:link {
 	color:#000 !important;
 }
 
+.cat.module {
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 150%;
+	width: 560px;
+	float: left;
+}
+
+.cat.module > ul > li {
+        list-style-type:none;
+	float: left;
+	width: 265px;
+	margin: 0 0px 5px 5px;
+	padding: 5px;
+	background-color: #fff;
+}
+
+.cat.module .master {
+	width: 545px;
+	float: none;
+}
+
+.cat.module ul {
+        padding: 0;
+        margin:0;
+}
+
 .blog.module {
 	font-size:12px;
 	line-height: 150%;

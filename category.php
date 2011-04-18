@@ -1,0 +1,52 @@
+<?php get_header(); ?>
+<?
+/**
+ * header.php lässt drei DIVs offen:
+ * #body > .content > .col1
+ **/
+?>
+</div>
+	<div class="cat module">
+	<?php if (have_posts()) : ?>
+		<?php if (is_category()) : ?>		
+		<ul>
+		<?php $post_count = 0; ?>
+		<?php while (have_posts()) : the_post(); ?>
+			<?php if ($post_count == 0) : ?>
+			<li  class="master" id="post-<?php the_ID(); ?>">
+				 <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h2>                        
+                        	<div class="entry">
+                                               <?php the_content(); ?>
+                                </div>
+
+			</li>
+			<?php $post_count = $post_count + 1; ?>
+			<?php else:  ?>
+			<li  <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h2>
+                                <div class="entry">
+                                               <?php the_content(); ?>
+                                </div>
+
+			</li>
+			<?php $post_count = $post_count + 1; ?>
+			<?php endif; ?>
+		<?php endwhile; ?>
+		</ul>
+		<div class="navigation">
+			<div class="alignleft"><?php next_posts_link(__('&laquo; Vorherige', 'kubrick')) ?></div>
+			<div class="alignright"><?php previous_posts_link(__('Neuere &raquo;', 'kubrick')) ?></div>
+		</div>
+		<?php endif; ?>
+	<?php endif; ?>
+	</div><!--.cat.module-->
+	        <div id="col2">
+                        <?php get_sidebar(1); ?>
+                        <?php get_sidebar(2); ?>
+        	</div>
+
+
+	<?php get_footer(); ?>
+        
+
+
