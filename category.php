@@ -33,9 +33,6 @@
 			<?php endif; ?>
 		<?php endwhile; ?>
 		</ul>
-		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link(__('&laquo; Vorherige', 'kubrick')) ?></div>
-			<div class="alignright"><?php previous_posts_link(__('Neuere &raquo;', 'kubrick')) ?></div>
 		</div>
 		<?php endif; ?>
 	<?php endif; ?>

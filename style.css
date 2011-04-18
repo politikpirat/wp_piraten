@@ -291,6 +291,10 @@ h2 a:active, h2 a:link {
 	float: none;
 }
 
+.entry {
+	word-wrap: break-word;
+}
+
 .cat.module ul {
         padding: 0;
         margin:0;
