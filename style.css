@@ -278,6 +278,11 @@ h2 a:active, h2 a:link {
 	float: left;
 }
 
+.cat.module a {
+        text-decoration: none;
+        font-weight: bold;
+}
+
 .cat.module > ul > li {
         list-style-type:none;
 	float: left;
@@ -285,11 +290,18 @@ h2 a:active, h2 a:link {
 	margin: 0 0px 5px 5px;
 	padding: 5px;
 	background-color: #fff;
+	height: 300px;
+	overflow: hidden;
 }
 
-.cat.module .master {
-	width: 545px;
-	float: none;
+.cat.module > ul > li.master {
+        list-style-type:none;
+        width: 545px;
+        float: none;
+	margin: 0 0px 5px 5px;
+        padding: 5px;
+        background-color: #fff;
+	height: auto;
 }
 
 .entry {
@@ -316,6 +328,13 @@ h2 a:active, h2 a:link {
         margin-top:6px;
         padding-bottom: 1em;
 }
+
+.cat.module .entry img {
+	width: 30%;
+	height: auto;
+	float: right;
+}
+
 .cat.module h4 {
         margin: 10px 0px;
 }

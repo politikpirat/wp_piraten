@@ -10,18 +10,18 @@
 	<?php if (have_posts()) : ?>
 		<?php if (is_category()) : ?>		
 		<ul>
-		<?php $post_count = 0; ?>
-		<?php while (have_posts()) : the_post(); ?>
-			<?php if ($post_count == 0) : ?>
-			<li  class="master" id="post-<?php the_ID(); ?>">
-				 <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h2>                        
-                        	<div class="entry">
-                                               <?php the_content(); ?>
+		<?php $query = new WP_Query('title=single_cat_title()'); ?>
+		<?php if ($query->have_posts()) : $query->the_post();  ?>
+			<li  class="master" id="master">
+                                 <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h2>
+                                <div class="entry">
+						<?php the_content(); ?>
                                 </div>
 
-			</li>
-			<?php $post_count = $post_count + 1; ?>
-			<?php else:  ?>
+                        </li>
+		<?php  endif; ?>
+		<?php wp_reset_postdata(); ?>
+		<?php while (have_posts()) : the_post(); ?>
 			<li  <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h2>
                                 <div class="entry">
@@ -29,8 +29,6 @@
                                 </div>
 
 			</li>
-			<?php $post_count = $post_count + 1; ?>
-			<?php endif; ?>
 		<?php endwhile; ?>
 		</ul>
 		<?php endif; ?>
