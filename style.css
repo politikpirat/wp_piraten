@@ -301,6 +301,38 @@ h2 a:active, h2 a:link {
         margin:0;
 }
 
+.cat.module ul li h3 {
+        padding: 6px 0px;
+        margin: 10px 0 0 0;
+        font-size: 17px;
+        line-height: 20px;
+}
+.cat.module ul li strong {
+        font-size:110%;
+        color: #000;
+        font-weight: bold;
+}
+.cat.module .entry {
+        margin-top:6px;
+        padding-bottom: 1em;
+}
+.cat.module h4 {
+        margin: 10px 0px;
+}
+.cat.module > ul > li {
+        border-top:1px solid #b6b6b6;
+}
+.cat.module ul li:first-child {
+        border-top: 0;
+}
+
+.cat.module .entry ul {
+        list-style: none;
+        font-size: 105%;
+        padding: 6px 0px 6px 23px;
+}
+
+
 .blog.module {
 	font-size:12px;
 	line-height: 150%;
