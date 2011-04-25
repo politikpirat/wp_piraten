@@ -1,4 +1,8 @@
-rateWidgets
+<?php
+
+
+/**
+ * PirateWidgets
  * @author Florian Bischof
  */
 
@@ -261,4 +265,3 @@ wp_register_widget_control('pirateSms', 'SMS Pirat', 'pirateWidgetSmsControl' );
 
 
 ?>
-
