@@ -15,12 +15,12 @@ function piratesEverywhere($args) {
 	print <<<END
 				<div class="box boxPirateCommunities" id="">
 					<h2>Piraten Überall</h2>
-					<div class="linklist">
+					<div class="content linklist">
 						<table id="linkTable"><tr><td>
 							<div id="twitterLink"><a href="http://twitter.com/piratenberlin">Twitter</a></div>
                                                         <div id="identicaLink"><a href="http://identi.ca/piratenberlin">Identi.ca</a></div>
 							<div id="myspaceLink"><a href="http://www.myspace.com/piratenparteiberlin">MySpace</a></div>
-							<div id="youtubeLink"><a href="http://www.youtube.com/user/Piratenberlin">YouTube</a></div>
+							<div id="youtubeLink"><a href="http://www.youtube.com/user/Piratenpartei">YouTube</a></div>
                                                 </td><td>
 							<div id="flickrLink"><a href="http://www.flickr.com/search/?q=piratenpartei&w=all">Flickr</a></div>
 							<div id="diggLink"><a href="http://digg.com/search?s=piratenpartei">Digg</a></div>
@@ -173,7 +173,7 @@ function pirateCollectionProgress($args) {
 	$targetValue = ($options['targetValue']) ? $options['targetValue'] : 42;
 	$daysLeft = ($options['endDate']) ? floor((strtotime($options['endDate']) - time()) / 86400) : 42;
 	$percent = floor(($currentValue / $targetValue) * 100);
-		
+
 	print <<<END
 		<div id="boxVote" class="box">
 			<h2>{$title}</h2>
@@ -233,6 +233,7 @@ function pirateCollectionProgressControl() {
 }
 wp_register_sidebar_widget('pirateCollectionProgress', 'Piraten Sammlungs Fortschritt', 'pirateCollectionProgress');
 wp_register_widget_control('pirateCollectionProgress', 'Piraten Sammlungs Fortschritt', 'pirateCollectionProgressControl' );
+
 
 
 
