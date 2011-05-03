@@ -67,15 +67,16 @@
 		<p><?php _e('Sorry, no posts matched your criteria.', 'kubrick'); ?></p>
 
 <?php endif; ?>
-				</div><!-- .blog.module -->
-			<!-- .col1 -->
+			</div><!-- .col1 -->
 			<?
 			/**
 			 * an dieser Stelle sind noch zwei DIVs offen:
 			 * #body > .content
 			 **/
 			?>
+		<div id="col2">
 <?php get_sidebar(); ?>
+		</div><!-- col2 -->
 		<?
 		/**
 		 * Jetzt ist nur noch ein DIV offen:
